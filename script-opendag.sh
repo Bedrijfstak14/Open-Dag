@@ -10,10 +10,12 @@ id ec2-user
 # Reload a Linux user's group assignments to docker w/o logout
 newgrp docker
 
+
 # Docker compose install
-# 1. Get pip3 
-sudo yum install python3-pip -y
-sudo pip3 install docker-compose -y
+wget https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) 
+sudo mv docker-compose-$(uname -s)-$(uname -m) /usr/local/bin/docker-compose
+sudo chmod -v +x /usr/local/bin/docker-compose
+
 
 # Automaticly start docker
 sudo systemctl enable docker.service
