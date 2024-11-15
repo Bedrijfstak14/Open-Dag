@@ -27,7 +27,7 @@ git config — global user.name “gebruiker”
 git config — global user.email “gebruiker@example.com”
 
 sudo mkdir ./git 
-cd ./git
+cd /git
 git clone https://github.com/Bedrijfstak14/Open-Dag.git
 
 # Deploy NPM:
@@ -36,5 +36,5 @@ git clone https://github.com/Bedrijfstak14/Open-Dag.git
 
 # Deploy Stirling
 
-cd ./strirling-pdf
+cd /git/Open-Dag/strirling-pdf
 docker compose up -d
