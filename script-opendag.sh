@@ -30,3 +30,11 @@ sudo mkdir ./git
 cd ./git
 git clone https://github.com/Bedrijfstak14/Open-Dag.git
 
+# Deploy NPM:
+
+
+
+# Deploy Stirling
+
+cd ./strirling-pdf
+docker compose up -d
